@@ -19,7 +19,7 @@ This portfolio highlights my journey, skills, and professional background, showc
 * **Soft Skills:** Communication, Problem-Solving, Time Management, Adaptability, Teamwork
 * Strong ability to learn new technologies quickly and apply them to real-world problems.
 
-Live Demo here (https://lindiwe-ndlazi-portfolio-qbwr.vercel.app/)
+Live Demo here (https://lindiwe-ndlazi-portfolio-wjb2.vercel.app/)
 
 ### Contact Information
 
