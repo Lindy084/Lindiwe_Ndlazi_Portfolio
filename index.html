@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lindiwe Ndlazi - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+       background-color: #E0F2FE; /* Light Blue */
+    color: #1E1E1E; /* Optional: Keeps text readable */
+    }
+    header {
+      background-color: #6D28D9;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    .hero {
+      text-align: center;
+    }
+    .project, .projects-grid article {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  margin: 15px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-grid article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(109, 40, 217, 0.15);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #6D28D9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.project-card p {
+  font-size: 15px;
+  color: #374151;
+  margin-bottom: 15px;
+}
+
+.project-links a {
+  display: inline-block;
+  margin-top: 8px;
+  margin-right: 10px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  background-color: #6D28D9;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.project-links a:hover {
+  background-color: #5b21b6;
+}
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skill-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skill-badge {
+      background-color: #6D28D9;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    #certifications h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4c1d95;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cert-highlight {
+  background-color: #6D28D9;
+  color: #fff;
+  border-radius: 12px;
+}
+
+#certifications ul li {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+    .contact form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .contact input, .contact textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #d1d5db;
+      border-radius: 5px;
+    }
+    .contact button {
+      background-color: #10B981;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #6D28D9;
+      color: white;
+    }
+    .btn-resume {
+      display: block;
+      text-align: center;
+      margin: 30px auto;
+      background-color: #6D28D9;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .projects-grid {
+      display: grid;
+      gap: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lindiwe Ndlazi</h1>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+<section class="hero" style="text-align: center; padding: 40px;">
+
+  <!-- Floating Profile Image -->
+  <img 
+    src="assets/images/Lee.jpg" 
+    alt="Lindiwe Ndlazi" 
+    style="
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #6D28D9;
+      margin-bottom: 20px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    "
+    onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 8px 20px rgba(0, 0, 0, 0.2)'"
+    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'"
+  />
+
+</section>
+
+
+ <!-- About Section -->
+<section id="about" class="section">
+  <div style="
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 40px;
+    max-width: 700px;
+    margin: 0 auto;
+    border-left: 6px solid #6D28D9;
+    text-align: center;
+  ">
+    <h2 style="margin-bottom: 20px; color: #6D28D9; font-size: 32px;">
+      About Me
+    </h2>
+    <p style="font-size: 18px; color: #444; line-height: 1.6;">
+      Hello! I'm Lindiwe Ndlazi, a passionate learner in Artificial Intelligence with a background in HR and a growing portfolio in tech.
+    </p>
+  </div>
+</section>
+
+
+
+
+<section id="skills" class="section" style="padding: 40px 20px;">
+  <!-- Main Skills Heading -->
+  <h2 style="text-align: left; color: #4B0082; font-size: 2rem; margin-bottom: 30px;">💼 Skills</h2>
+  
+  <div class="skills-container" style="display: flex; flex-direction: column; gap: 40px;">
+
+    <!-- Technical Skills -->
+    <div>
+      <h3 style="text-align: left; color: #6D28D9; margin-bottom: 10px; font-size: 1.5rem;">🧠 Technical Skills</h3>
+      <ul class="skill-list tech" style="display: flex; flex-wrap: wrap; gap: 12px; padding-left: 0; list-style: none;">
+        <li class="skill-badge">Python</li>
+        <li class="skill-badge">HTML</li>
+        <li class="skill-badge">CSS</li>
+        <li class="skill-badge">JavaScript</li>
+        <li class="skill-badge">OpenRouter API</li>
+        <li class="skill-badge">GitHub</li>
+      </ul>
+    </div>
+
+    <!-- Soft Skills -->
+    <div>
+      <h3 style="text-align: left; color: #6D28D9; margin-bottom: 10px; font-size: 1.5rem;">🤝 Soft Skills</h3>
+      <ul class="skill-list soft" style="display: flex; flex-wrap: wrap; gap: 12px; padding-left: 0; list-style: none;">
+        <li class="skill-badge">Communication</li>
+        <li class="skill-badge">Problem-Solving</li>
+        <li class="skill-badge">Time Management</li>
+        <li class="skill-badge">Adaptability</li>
+        <li class="skill-badge">Teamwork</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- Add this CSS to style your skill badges -->
+<style>
+  .skill-badge {
+    background-color: #EDE9FE;
+    color: #4B0082;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+</style>
+
+
+  <section class="projects" id="projects">
+    <h2 style="text-align:center;">Projects</h2>
+    <div class="projects-grid">
+      <article class="project-card">
+        <h3>🎓 Educational Content Generator</h3>
+        <p>AI-driven web app designed to simplify content creation.</p>
+        <div class="project-links">
+          <a href="https://github.com/Lindy084/Educational_Content_Generator.git" target="_blank">GitHub</a>
+          <a href="https://educational-content-generator-1.onrender.com" target="_blank">Live Demo</a>
+        </div>
+      </article>
+      <article class="project-card">
+        <h3>📄✨ AI Resume Builder</h3>
+        <p>Generates optimized, ATS-friendly resumes with AI assistance and export options.</p>
+        <div class="project-links">
+          <a href="https://github.com/Lindy084/AI_Resume_Builder.git" target="_blank">GitHub</a>
+          <a href="https://ai-resume-builder-e419.vercel.app/" target="_blank">Live Demo</a>
+        </div>
+      </article>
+      <article class="project-card">
+        <h3>📊 Sentiment Dashboard</h3>
+        <p>Interactive dashboard classifying text sentiments with graphs and accuracy scores.</p>
+        <div class="project-links">
+          <a href="https://github.com/Lindy084/sentiment_dashboard2.git" target="_blank">GitHub</a>
+          <a href="https://sentimentdashboard2-48pmkpdk6zxouxnqyfsttg.streamlit.app/" target="_blank">Live Demo</a>
+        </div>
+      </article>
+      <article class="project-card">
+        <h3>🧠 AI Capstone</h3>
+        <p>AI Capstone is a multifunctional app combining 3 different tools.</p>
+        <div class="project-links">
+          <a href="https://github.com/Lindy084/AI_Capstone_App.git" target="_blank">GitHub</a>
+          <a href="https://ai-capstone-app-1.onrender.com/" target="_blank">Live Demo</a>
+        </div>
+      </article>
+      <article class="project-card">
+        <h3>🎓 University Application Bot</h3>
+        <p>Guides students through university applications with AI responses on Poe</p>
+        <div class="project-links">
+          <a href="https://github.com/Lindy084/uni_apply_bot.git" target="_blank">GitHub</a>
+          <a href="https://poe.com/uni_apply_bot" target="_blank">Live Demo</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="certifications">
+  <h2 class="text-3xl font-bold text-center text-purple-700 mb-6">Certifications</h2>
+  
+  <div class="flex flex-col items-center space-y-4">
+    <a href="https://coursera.org/share/a685a437ccfc72023f625c27bab78b07" target="_blank">
+      <img src="https://img.shields.io/badge/Coursera-AI%20For%20Everyone-blue?logo=coursera&style=for-the-badge">
+    </a>
+    <a href="https://coursera.org/share/f6e4c049fff9f29af8e40575f17d64bb" target="_blank">
+      <img src="https://img.shields.io/badge/Coursera-Intro%20to%20Responsible%20AI-blue?logo=coursera&style=for-the-badge">
+    </a>
+    <a href="https://coursera.org/share/f3bbf0a9ee5e5dbdb1ecf5eb98c2e1f5" target="_blank">
+      <img src="https://img.shields.io/badge/Coursera-Trustworthy%20AI-blue?logo=coursera&style=for-the-badge">
+    </a>
+    <a href="https://coursera.org/share/0ec17a70b285499473f51bdc406dd645" target="_blank">
+      <img src="https://img.shields.io/badge/Coursera-Build%20AI%20Chatbots%20with%20No%20Code-blue?logo=coursera&style=for-the-badge">
+    </a>
+    <p class="text-center text-gray-700 text-base px-4">
+      I have completed several AI-related courses on Coursera, including <strong>AI For Everyone</strong> by Andrew Ng, with a focus on ethics, trust, and real-world application of AI tools.
+    </p>
+  </div>
+
+ <div class="mt-10 bg-gradient-to-r from-purple-700 via-purple-600 to-purple-700 p-8 rounded-2xl shadow-lg">
+  <h3 class="text-2xl font-bold text-white mb-6 text-center tracking-wide">🎓 Other Certifications</h3>
+  <ul class="text-white space-y-4 pl-4">
+    <li class="flex items-start gap-2">
+      <i class="fas fa-certificate mt-1 text-yellow-300"></i>
+      <span><strong>AI-102:</strong> Designing and Implementing an Azure AI Solution</span>
+    </li>
+    <li class="flex items-start gap-2">
+      <i class="fas fa-certificate mt-1 text-yellow-300"></i>
+      <span><strong>MS-721:</strong> Collaboration Communications Systems Engineer</span>
+    </li>
+    <li class="flex items-start gap-2">
+      <i class="fas fa-certificate mt-1 text-yellow-300"></i>
+      <span><strong>MS-900:</strong> Microsoft 365 Fundamentals</span>
+    </li>
+    <li class="flex items-start gap-2">
+      <i class="fas fa-certificate mt-1 text-yellow-300"></i>
+      <span><strong>System Development Level 5:</strong> NQF Accredited Qualification</span>
+    </li>
+  </ul>
+</div>
+
+
+
+ <a href="assets/resume/resume.pdf" class="btn-resume" download>Download Resume</a>
+
+
+  <section class="contact" id="contact">
+    <h2 style="text-align:center;">Contact Me</h2>
+    <form action="https://formsubmit.co/ndlazilindy22@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <div>
+
+    </div>
+    <p>&copy; 2025 Lindiwe Ndlazi. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
